@@ -1,0 +1,4 @@
+NEURON neuron1 0.345 34 32
+NEURON 23 3 2			//verursacht Fehler
+CONNECT 0 1 0.4
+CONNECT 2			//verursacht Fehler

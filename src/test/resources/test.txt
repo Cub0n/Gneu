@@ -1,0 +1,21 @@
+NEURON vorh_ja 1.0 30 30 passive
+NEURON vorh_nein -1.0 50 240 passive
+NEURON schaden 0.0010 180 30 active
+NEURON pers_verurs 0.0010 180 90 active
+NEURON kontrolle 0.0010 180 150 active
+NEURON höheres_ziel 0.0010 180 210 active
+NEURON wissen 0.0010 180 270 active
+NEURON ärger 0.0010 310 90 active
+NEURON traurigkeit 0.0010 310 180 active
+NEURON boykott 0.0010 420 90 active
+NEURON hilfe 0.0010 420 180 active
+CONNECT 0 2 0.04 4 0.04 3 0.04
+CONNECT 2 8 0.04 7 0.04 0 0.04
+CONNECT 3 8 -0.04 7 0.04 0 0.04
+CONNECT 4 8 -0.04 7 0.04 0 0.04
+CONNECT 5 8 0.04 7 -0.04
+CONNECT 6 8 -0.04 7 0.04
+CONNECT 7 2 0.04 4 0.04 9 0.04 6 0.04 3 0.04 5 -0.04
+CONNECT 8 2 0.04 4 -0.04 6 -0.04 3 -0.04 10 0.04 5 0.04
+CONNECT 9 7 0.04
+CONNECT 10 8 0.04
